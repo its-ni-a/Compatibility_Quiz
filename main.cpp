@@ -11,6 +11,7 @@ private:
 public:
     SpiritualityQuiz() : score(0), totalPossible(110) {}
     void startQuiz();
+    void getUserDetails();
     void askQuestion(const std::string& question, const std::vector<std::string>& options, const std::vector<int>& scores, bool terminate = false);
     void askQuestions();
     void displayScore();
